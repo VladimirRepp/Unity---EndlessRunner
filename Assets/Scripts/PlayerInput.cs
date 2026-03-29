@@ -3,8 +3,8 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 /// <summary>
-/// Фасад - работа с вводом игрока <br/>
-/// Отслеживание всего ввода игрока во время игры
+/// РљР»Р°СЃСЃ - РЅР°СЃР»РµРґРЅРёРє РѕС‚ MonoBehaviour <br/>
+/// РћС‚РІРµС‡Р°РµС‚ Р·Р° РіРµРЅРµСЂР°С†РёСЋ РїСЂРµРїСЏС‚СЃС‚РІРёР№ РЅР° СѓСЂРѕРІРЅРµ
 /// </summary>
 public class PlayerInput : MonoBehaviour
 {
@@ -38,7 +38,7 @@ public class PlayerInput : MonoBehaviour
 
         var swipe = GestureController.Instance;
 
-        if(swipe != null)
+        if (swipe != null)
         {
             swipe.OnSwipeRight -= HandleSwipeRight;
             swipe.OnSwipeLeft -= HandleSwipeLeft;

@@ -1,7 +1,7 @@
 using UnityEngine;
 
 /// <summary>
-/// Глобальный объект для движения объектов на локации
+/// РћС‚РІРµС‡Р°РµС‚ Р·Р° РіРµРЅРµСЂР°С†РёСЋ РїСЂРµРїСЏС‚СЃС‚РІРёР№ РЅР° РґРѕСЂРѕРіРµ
 /// </summary>
 public class Treadmill : ObserverLevelConfig
 {
@@ -10,10 +10,10 @@ public class Treadmill : ObserverLevelConfig
 
     private void Update()
     {
-        if(!_canMove)
+        if (!_canMove)
             return;
 
-        transform.Translate(Vector3.back * _moveSpeed * Time.deltaTime, 
+        transform.Translate(Vector3.back * _moveSpeed * Time.deltaTime,
             Space.World);
     }
 

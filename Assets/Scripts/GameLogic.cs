@@ -54,7 +54,7 @@ public class GameLogic : MonoBehaviour
         {
             AdvManager.Instance.OnRevarded -= HandleRevarded;
             AdvManager.Instance.OnErrorRevarded -= HandleErrorRevarded;
-        }        
+        }
     }
 
     private void NotifyLevelConfigSubscribers()
@@ -81,7 +81,7 @@ public class GameLogic : MonoBehaviour
 
     private void HandleErrorRevarded()
     {
-        Debug.Log("Ошибка показа рекламы за вознаграждение!");
+        Debug.Log("РћС€РёР±РєР° РїСЂРё РїРѕРєР°Р·Рµ РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёСЏ!");
     }
 
 
@@ -93,7 +93,7 @@ public class GameLogic : MonoBehaviour
         int next = _currentIndexSettings < _levelConfigs.Length - 1 ?
                 _currentIndexSettings + 1 : _levelConfigs.Length - 1;
 
-        // Проверка активации 
+        // РїСЂРѕРІРµСЂРєР° Р°РєС‚РёРІР°С†РёРё 
         if (currentScore == _prevScoreSettingsActivation + _levelConfigs[next].stepActivation)
         {
             _prevScoreSettingsActivation = currentScore;

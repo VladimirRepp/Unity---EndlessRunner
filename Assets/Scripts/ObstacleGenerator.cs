@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UIElements;
 
 public class ObstacleGenerator : ObserverLevelConfig
-{ 
+{
     [Header("Event Throwers Settings")]
     [SerializeField] private GameLogic gameLogic;
 
@@ -68,14 +68,14 @@ public class ObstacleGenerator : ObserverLevelConfig
             {
                 GameObject firstGroup = _groups[0];
 
-                 if (firstGroup != null && 
-                    firstGroup.transform.position.z <= endPosition.position.z)
+                if (firstGroup != null &&
+                   firstGroup.transform.position.z <= endPosition.position.z)
                 {
-                    // Удаляем только первую группу
+                    // СѓРґР°Р»СЏРµРј РїРµСЂРІСѓСЋ РіСЂСѓРїРїСѓ РѕР±СЉРµРєС‚РѕРІ
                     Destroy(firstGroup);
                     _groups.RemoveAt(0);
 
-                    // Создаем новую группу 
+                    // РіРµРЅРµСЂРёСЂСѓРµРј РЅРѕРІСѓСЋ РіСЂСѓРїРїСѓ 
                     GameObject newGroup = GenerateObstaclesInGroup();
                     _groups.Add(newGroup);
                 }
@@ -87,7 +87,7 @@ public class ObstacleGenerator : ObserverLevelConfig
 
     private void InitGroups()
     {
-        _groups = new ();
+        _groups = new();
 
         for (int i = 0; i < _levelConfig.countGroup; i++)
         {
@@ -121,7 +121,7 @@ public class ObstacleGenerator : ObserverLevelConfig
                 case EObstacleGenerationStrategy.Random:
                     new_position = GetNewPosition_Random(i);
                     break;
-                    
+
                 case EObstacleGenerationStrategy.CheckersPattern:
                     new_position = GetNewPosition_CheckersPattern(i);
                     break;
@@ -137,8 +137,6 @@ public class ObstacleGenerator : ObserverLevelConfig
             groupStartZ = obstacle.transform.position.z;
         }
 
-        // todo: проверить шаг генерации групп
-        // некотрые группы наслаиваются друг на друга 
         if (_currentIndexGroup == 0)
         {
             groupStartZ = initialPositionByZ;
@@ -202,7 +200,7 @@ public class ObstacleGenerator : ObserverLevelConfig
             }
         }
 
-       return GetPositionByLine(_currentIndexLine, _levelConfig.stepObstacle * i);
+        return GetPositionByLine(_currentIndexLine, _levelConfig.stepObstacle * i);
     }
 
     private Vector3 GetNewPosition_SnakePattern(int i)
