@@ -109,6 +109,7 @@
 
 📸 *Скриншот главного меню:*
 `/Screenshots/main_menu.png`
+
 <img width="332" height="611" alt="main_menu" src="https://github.com/user-attachments/assets/45d8837f-419d-492e-b659-6f39823aee8b" />
 
 ---
@@ -120,6 +121,7 @@
 
 📸 *Скриншот загрузки:*
 `/Screenshots/loading_scene.png`
+
 <img width="332" height="607" alt="loading_scene" src="https://github.com/user-attachments/assets/7965617b-2537-4e4a-accb-1ca1f0fdeda3" />
 
 ---
@@ -134,6 +136,7 @@
 
 📸 *Скриншот магазина:*
 `/Screenshots/shop.png`
+
 <img width="331" height="613" alt="shop" src="https://github.com/user-attachments/assets/856dc781-8eba-4af9-bc81-f5955475f61d" />
 
 ---
@@ -145,6 +148,7 @@
 
 📸 *Скриншот игрового процесса:*
 `/Screenshots/gameplay.png`
+
 <img width="330" height="609" alt="gameplay" src="https://github.com/user-attachments/assets/74704436-d86a-45a6-bffb-0f1edccf6d78" />
 
 ---
