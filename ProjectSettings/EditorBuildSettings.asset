@@ -17,6 +17,9 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/_Scenes/GameScene.unity
     guid: 99c9720ab356a0642a771bea13969a05
+  - enabled: 1
+    path: Assets/_Scenes/AchievementScene.unity
+    guid: 527684bc8c9bff84e98a779b550a51a7
   - enabled: 0
     path: Assets/VladimirFps - MySceneManager/_Scenes/DEMO 1.unity
     guid: 8206cfe1e99d74230bf4784b40c3251d

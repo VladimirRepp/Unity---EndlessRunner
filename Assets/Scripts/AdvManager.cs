@@ -16,46 +16,29 @@ public class AdvManager : Singleton<AdvManager>, IInitialized
 
     public void Startup()
     {
-        // todo: Р·РґРµСЃСЊ РёРЅРёС†РёР°Р»РёР·Р°С†РёСЏ СЂРµРєР»Р°РјРЅРѕРіРѕ SDK РґР»СЏ РїРѕРєР°Р·Р°
+        // todo: заранее загрузить рекламу для показа
     }
 
     public void ShowRevarded()
     {
-        // todo: РїРѕРєР°Р·Р°С‚СЊ СЂРµРєР»Р°РјСѓ С‡РµСЂРµР· API СЂРµРєР»Р°РјРЅРѕР№ СЃРµС‚Рё 
+        // todo: запустить рекламу через API рекламодателя 
         Debug.Log("--> ShowRevarded called!");
 
-        // РІС‹Р·РѕРІ СЂРµРєР»Р°РјРЅРѕРіРѕ API - РёРјРёС‚Р°С†РёСЏ СЂРµР·СѓР»СЊС‚Р°С‚Р°
+        // Имитация прослушки API
         bool isRevard = UnityEngine.Random.Range(0f, 1f) >= 0.5f ? true : false;
 
-        // РїСЂРѕРІРµСЂРєР°: РµСЃР»Рё СЂРµРєР»Р°РјР° РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅР° 
+        // Допустим: надо дать вознагрождения 
         if (isRevard)
             OnRevarded?.Invoke();
 
-        // РёРЅР°С‡Рµ: РѕС€РёР±РєР°
+        // Или: ошибка
         else
             OnErrorRevarded?.Invoke();
     }
 
-    public void ShowRevarded(Action<bool> callback)
-    {
-        // todo: РїРѕРєР°Р·Р°С‚СЊ СЂРµРєР»Р°РјСѓ С‡РµСЂРµР· API СЂРµРєР»Р°РјРЅРѕР№ СЃРµС‚Рё 
-        Debug.Log("--> ShowRevarded called!");
-
-        // РІС‹Р·РѕРІ СЂРµРєР»Р°РјРЅРѕРіРѕ API - РёРјРёС‚Р°С†РёСЏ СЂРµР·СѓР»СЊС‚Р°С‚Р°
-        bool isRevard = UnityEngine.Random.Range(0f, 1f) >= 0.5f ? true : false;
-
-        // РїСЂРѕРІРµСЂРєР°: РµСЃР»Рё СЂРµРєР»Р°РјР° РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅР° 
-        if (isRevard)
-            callback?.Invoke(true);
-
-        // РёРЅР°С‡Рµ: РѕС€РёР±РєР°
-        else
-            callback?.Invoke(false);
-    }
-
     public void ShowInterstion()
     {
-        // todo: РїРѕРєР°Р·Р°С‚СЊ СЂРµРєР»Р°РјСѓ С‡РµСЂРµР· API СЂРµРєР»Р°РјРЅРѕР№ СЃРµС‚Рё 
+        // todo: запустить рекламу через API рекламодателя 
         Debug.Log("--> ShowInterstionAdv called!");
     }
 }

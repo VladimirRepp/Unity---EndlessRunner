@@ -5,6 +5,7 @@ public class DataController : Singleton<DataController>, IInitialized
     private const string _coinsKey = "Coins";
     private const string _purchasedSkinsKey = "P_Skins";
     private const string _selectedSkinsKey = "Selected_Skins";
+    private const string _collectedAchievements = "Collected_Achievements";
 
     public void Startup()
     {
@@ -12,7 +13,7 @@ public class DataController : Singleton<DataController>, IInitialized
     }
 
     /// <summary>
-    /// РЎРѕС…СЂР°РЅСЏРµС‚ С‚РµРєСѓС‰РµРµ РєРѕР»РёС‡РµСЃС‚РІРѕ РјРѕРЅРµС‚
+    /// Перезаписать количество монет игрока
     /// </summary>
     /// <param name="currentCounCoins"></param>
     public void SaveCoins(int currentCounCoins)
@@ -45,8 +46,17 @@ public class DataController : Singleton<DataController>, IInitialized
         int id = PlayerPrefs.GetInt(_selectedSkinsKey);
 
         if (id == 0)
-            return 1; // id РїРµСЂРІРѕРіРѕ СЃРєРёРЅР° СЂР°РІРµРЅ 1, С‚Р°Рє С‡С‚Рѕ РµСЃР»Рё РЅРµС‚ РґР°РЅРЅС‹С…, С‚Рѕ РІРѕР·РІСЂР°С‰Р°РµРј 1
+            return 1; // id скинов начинают с 1, по этому если ключа нет, то вернем 1
 
         return id;
+    }
+
+    public void SaveCollectedAchievements(string idsCollected)
+    {
+        PlayerPrefs.SetString(_collectedAchievements, idsCollected);
+    }
+
+    public string LoadCollectedAchievements() {
+        return PlayerPrefs.GetString(_collectedAchievements);
     }
 }

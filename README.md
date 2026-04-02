@@ -70,6 +70,15 @@
 
 ---
 
+### 🎯 Система достижений 
+
+* Все достиежения описаны через **ScriptableObject**
+* Простое добавление новых достижений
+* В логику встраевается проверка условия достижения 
+* Достижения сохраняются при получении 
+
+---
+
 ### 💾 Сохранение данных
 
 * Используется `DataController` (Singleton)
@@ -144,6 +153,18 @@
 
 📸 *Скриншот игрового процесса:*
 `/Screenshots/gameplay.png`
+
+<img width="330" height="609" alt="gameplay" src="https://github.com/user-attachments/assets/74704436-d86a-45a6-bffb-0f1edccf6d78" />
+
+---
+
+### 🎯 Сцена достижений
+
+* Визуализация собранных достижений
+* Возможность посмотреть условия получения достижения
+
+📸 *Скриншот достижений:*
+`/Screenshots/achievements.png`
 
 <img width="330" height="609" alt="gameplay" src="https://github.com/user-attachments/assets/74704436-d86a-45a6-bffb-0f1edccf6d78" />
 

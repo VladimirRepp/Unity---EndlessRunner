@@ -5,6 +5,7 @@ using UnityEngine;
 public class StoreController : MonoBehaviour
 {
     [SerializeField] private CoinsViewer coinsViewer;
+    [SerializeField] private AchievementSystem achievementSystem;
 
     private int _currentCountCoins = 0;
     private List<int> _purchasedIdSkins;
@@ -95,6 +96,8 @@ public class StoreController : MonoBehaviour
         _currentCountCoins -= cost;
         _purchasedIdSkins.Add(id);
         Select(id);
+
+        achievementSystem.Verify(refID: 1, value: 1);
 
         DataController.Instance.SaveCoins(_currentCountCoins);
         SavePurchasedSkins();

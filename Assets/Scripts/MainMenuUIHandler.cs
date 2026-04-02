@@ -7,6 +7,7 @@ public class MainMenuUIHandler : MonoBehaviour
     [Header("Level Settings")]
     [SerializeField] private int indexGameScene = 3;
     [SerializeField] private int indexStore = 2;
+    [SerializeField] private int indexAchievs = 4;
 
     [Header("Anim Settings")]
     [SerializeField] private Animator vfxAnimator;
@@ -22,6 +23,11 @@ public class MainMenuUIHandler : MonoBehaviour
     public void OnClick_ToStore()
     {
         StartLoad(indexStore);
+    }
+
+    public void OnClick_ToAchievs()
+    {
+        StartLoad(indexAchievs);
     }
 
     private void StartLoad(int indexLevel)
