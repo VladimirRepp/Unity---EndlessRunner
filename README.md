@@ -166,7 +166,7 @@
 📸 *Скриншот достижений:*
 `/Screenshots/achievements.png`
 
-<img width="330" height="609" alt="gameplay" src="https://github.com/user-attachments/assets/74704436-d86a-45a6-bffb-0f1edccf6d78" />
+<img width="334" height="620" alt="achievements" src="https://github.com/user-attachments/assets/7f5a0f2c-3fea-4f76-89a6-b187afe27e70" />
 
 ---
 
