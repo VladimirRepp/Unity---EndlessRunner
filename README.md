@@ -115,7 +115,7 @@
 📸 *Скриншот главного меню:*
 `/Screenshots/main_menu.png`
 
-<img width="332" height="611" alt="main_menu" src="https://github.com/user-attachments/assets/45d8837f-419d-492e-b659-6f39823aee8b" />
+<img width="261" height="563" alt="main_menu" src="https://github.com/user-attachments/assets/7131cd95-6bc3-4115-9c46-0873f4437e3b" />
 
 ---
 
