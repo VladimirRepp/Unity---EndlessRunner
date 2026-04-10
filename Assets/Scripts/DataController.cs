@@ -13,7 +13,7 @@ public class DataController : Singleton<DataController>, IInitialized
     }
 
     /// <summary>
-    /// Перезаписать количество монет игрока
+    /// РџРµСЂРµР·Р°РїРёСЃР°С‚СЊ РєРѕР»РёС‡РµСЃС‚РІРѕ РјРѕРЅРµС‚ РёРіСЂРѕРєР°
     /// </summary>
     /// <param name="currentCounCoins"></param>
     public void SaveCoins(int currentCounCoins)
@@ -46,7 +46,7 @@ public class DataController : Singleton<DataController>, IInitialized
         int id = PlayerPrefs.GetInt(_selectedSkinsKey);
 
         if (id == 0)
-            return 1; // id скинов начинают с 1, по этому если ключа нет, то вернем 1
+            return 1; // id СЃРєРёРЅРѕРІ РЅР°С‡РёРЅР°СЋС‚ СЃ 1, РїРѕ СЌС‚РѕРјСѓ РµСЃР»Рё РєР»СЋС‡Р° РЅРµС‚, С‚Рѕ РІРµСЂРЅРµРј 1
 
         return id;
     }
