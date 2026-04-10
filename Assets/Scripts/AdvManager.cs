@@ -16,29 +16,29 @@ public class AdvManager : Singleton<AdvManager>, IInitialized
 
     public void Startup()
     {
-        // todo: çàðàíåå çàãðóçèòü ðåêëàìó äëÿ ïîêàçà
+        // todo: Ð·Ð°Ñ€Ð°Ð½ÐµÐµ Ð·Ð°Ð³Ñ€ÑƒÐ·Ð¸Ñ‚ÑŒ Ñ€ÐµÐºÐ»Ð°Ð¼Ñƒ Ð´Ð»Ñ Ð¿Ð¾ÐºÐ°Ð·Ð°
     }
 
     public void ShowRevarded()
     {
-        // todo: çàïóñòèòü ðåêëàìó ÷åðåç API ðåêëàìîäàòåëÿ 
+        // todo: Ð·Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚ÑŒ Ñ€ÐµÐºÐ»Ð°Ð¼Ñƒ Ñ‡ÐµÑ€ÐµÐ· API Ñ€ÐµÐºÐ»Ð°Ð¼Ð¾Ð´Ð°Ñ‚ÐµÐ»Ñ 
         Debug.Log("--> ShowRevarded called!");
 
-        // Èìèòàöèÿ ïðîñëóøêè API
+        // Ð˜Ð¼Ð¸Ñ‚Ð°Ñ†Ð¸Ñ Ð¿Ñ€Ð¾ÑÐ»ÑƒÑˆÐºÐ¸ API
         bool isRevard = UnityEngine.Random.Range(0f, 1f) >= 0.5f ? true : false;
 
-        // Äîïóñòèì: íàäî äàòü âîçíàãðîæäåíèÿ 
+        // Ð”Ð¾Ð¿ÑƒÑÑ‚Ð¸Ð¼: Ð½Ð°Ð´Ð¾ Ð´Ð°Ñ‚ÑŒ Ð²Ð¾Ð·Ð½Ð°Ð³Ñ€Ð°Ð¶Ð´ÐµÐ½Ð¸Ñ 
         if (isRevard)
             OnRevarded?.Invoke();
 
-        // Èëè: îøèáêà
+        // Ð˜Ð»Ð¸: Ð¾ÑˆÐ¸Ð±ÐºÐ°
         else
             OnErrorRevarded?.Invoke();
     }
 
     public void ShowInterstion()
     {
-        // todo: çàïóñòèòü ðåêëàìó ÷åðåç API ðåêëàìîäàòåëÿ 
+        // todo: Ð·Ð°Ð¿ÑƒÑÑ‚Ð¸Ñ‚ÑŒ Ñ€ÐµÐºÐ»Ð°Ð¼Ñƒ Ñ‡ÐµÑ€ÐµÐ· API Ñ€ÐµÐºÐ»Ð°Ð¼Ð¾Ð´Ð°Ñ‚ÐµÐ»Ñ 
         Debug.Log("--> ShowInterstionAdv called!");
     }
 }
