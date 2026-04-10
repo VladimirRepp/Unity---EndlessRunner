@@ -75,7 +75,7 @@ public class GameLogic : MonoBehaviour
 
     private void CheckAchievs(int currentScore)
     {
-        // Пример оптимизации 
+        // РџСЂРёРјРµСЂ РѕРїС‚РёРјРёР·Р°С†РёРё  
         if (!_statusAchievId2)
             _statusAchievId2 = achievementSystem.Verify(refID: 2, currentScore);
 
@@ -85,7 +85,7 @@ public class GameLogic : MonoBehaviour
         _achievNameId2 = achievementSystem.GetById(2).header;
         _achievNameId3 = achievementSystem.GetById(3).header;
 
-        // todo: выдать уведомлене о получении достижения
+        // todo: РІС‹РґР°С‚СЊ СѓРІРµРґРѕРјР»РµРЅРёРµ Рѕ РїРѕР»СѓС‡РµРЅРёРё РґРѕСЃС‚РёР¶РµРЅРёСЏ
         Debug.Log($"{_achievNameId2} status - {_statusAchievId2} |" +
             $" {_achievNameId3} status - {_statusAchievId3}");
 
@@ -109,7 +109,7 @@ public class GameLogic : MonoBehaviour
 
     private void HandleErrorRevarded()
     {
-        Debug.Log("Ошибка показа рекламы за вознаграждение!");
+        Debug.Log("РћС€РёР±РєР° РїРѕРєР°Р·Р° СЂРµРєР»Р°РјС‹ Р·Р° РІРѕР·РЅР°РіСЂР°Р¶РґРµРЅРёРµ!");
     }
 
     private void HandleScoreChanged(int currentScore)
@@ -119,7 +119,7 @@ public class GameLogic : MonoBehaviour
         int next = _currentIndexSettings < _levelConfigs.Length - 1 ?
                 _currentIndexSettings + 1 : _levelConfigs.Length - 1;
 
-        // Проверка активации 
+        // РџСЂРѕРІРµСЂРєР° Р°РєС‚РёРІР°С†РёРё  
         if (currentScore == _prevScoreSettingsActivation + _levelConfigs[next].stepActivation)
         {
             _prevScoreSettingsActivation = currentScore;
