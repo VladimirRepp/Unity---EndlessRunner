@@ -71,11 +71,11 @@ public class ObstacleGenerator : ObserverLevelConfig
                  if (firstGroup != null && 
                     firstGroup.transform.position.z <= endPosition.position.z)
                 {
-                    // Óäàëÿåì òîëüêî ïåðâóþ ãðóïïó
+                    // Ð£Ð´Ð°Ð»ÑÐµÐ¼ Ñ‚Ð¾Ð»ÑŒÐºÐ¾ Ð¿ÐµÑ€Ð²ÑƒÑŽ Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ
                     Destroy(firstGroup);
                     _groups.RemoveAt(0);
 
-                    // Ñîçäàåì íîâóþ ãðóïïó 
+                    // Ð¡Ð¾Ð·Ð´Ð°ÐµÐ¼ Ð½Ð¾Ð²ÑƒÑŽ Ð³Ñ€ÑƒÐ¿Ð¿Ñƒ 
                     GameObject newGroup = GenerateObstaclesInGroup();
                     _groups.Add(newGroup);
                 }
@@ -137,8 +137,8 @@ public class ObstacleGenerator : ObserverLevelConfig
             groupStartZ = obstacle.transform.position.z;
         }
 
-        // todo: ïðîâåðèòü øàã ãåíåðàöèè ãðóïï
-        // íåêîòðûå ãðóïïû íàñëàèâàþòñÿ äðóã íà äðóãà 
+        // todo: Ð¿Ñ€Ð¾Ð²ÐµÑ€Ð¸Ñ‚ÑŒ ÑˆÐ°Ð³ Ð³ÐµÐ½ÐµÑ€Ð°Ñ†Ð¸Ð¸ Ð³Ñ€ÑƒÐ¿Ð¿
+        // Ð½ÐµÐºÐ¾Ñ‚Ð¾Ñ€Ñ‹Ðµ Ð³Ñ€ÑƒÐ¿Ð¿Ñ‹ Ð½Ð°ÑÐ»Ð°Ð¸Ð²Ð°ÑŽÑ‚ÑÑ Ð´Ñ€ÑƒÐ³ Ð½Ð° Ð´Ñ€ÑƒÐ³Ð° 
         if (_currentIndexGroup == 0)
         {
             groupStartZ = initialPositionByZ;
